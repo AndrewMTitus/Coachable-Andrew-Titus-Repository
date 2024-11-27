@@ -1,4 +1,4 @@
-def removeElement(self, nums, val):
+def removeElement(nums, val):
     """
     :type nums: List[int]
     :type val: int
