@@ -15,6 +15,5 @@ def removeElement(nums, val):
             nums[k] = num #Keep the element
             k += 1 #Increment the pointer of non-val elements.
     return k
-    
     #time O(n)
     #space 0(1)
