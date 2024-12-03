@@ -2,12 +2,18 @@ def threeSum(nums):
     """
     :type nums: List[int]
     :rtype: List[List[int]]
-    we can solve using a fixed pointer and a two-pointer tecnique. 
-    1. Sort the array to avoid duplicate triplets and to use the two-pointer technique.
-    2. Fix one element. Iterate and fix one number(nums[i]) and use two pointers, left and right, 
+    we can solve using a fixed pointer and 
+    a two-pointer tecnique. 
+    1. Sort the array to avoid duplicate 
+    triplets and to use the two-pointer technique.
+    2. Fix one element. Iterate and fix one 
+    number(nums[i]) and use two pointers, left and right, 
     to find pairs that the sum equals -nums[i].
-    3. Use the two pointers to search for pairs whose sum equals the target and adjust pointers based on the sum.
-    4. Skip duplicate values while iterating to ensure unique triplets. 
+    3. Use the two pointers to search for pairs 
+    whose sum equals the target and adjust pointers 
+    based on the sum.
+    4. Skip duplicate values while iterating to 
+    ensure unique triplets. 
     """
     nums.sort() #sort the array
     result = []
