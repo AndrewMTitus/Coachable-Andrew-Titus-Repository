@@ -1,3 +1,5 @@
+from collections import Counter
+
 def isAnagram(s, t):
     """
     :type s: str
