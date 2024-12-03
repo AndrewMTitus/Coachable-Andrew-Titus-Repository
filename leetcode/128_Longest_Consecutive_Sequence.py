@@ -9,7 +9,7 @@ def longestConsecutive(nums):
     """
     if not nums:
         return 0
-    
+        
     num_set = set(nums)
     longest_streak = 0
 
@@ -23,7 +23,6 @@ def longestConsecutive(nums):
             while current_num + 1 in num_set:
                 current_num += 1
                 current_streak += 1
-            
             longest_streak = max(longest_streak, current_streak)
 
     return  longest_streak
