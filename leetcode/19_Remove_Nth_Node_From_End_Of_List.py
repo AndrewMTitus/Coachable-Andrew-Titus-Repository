@@ -1,8 +1,7 @@
 class ListNode:
-    def __init(self, val=0, next=None):
+    def __init__(self, val=0, next=None):
         self.val = val
-        self.next = next
-        
+        self.next = next_node
 def removeNthFromEnd(head, n):
     """
     :type head: ListNode
@@ -18,13 +17,11 @@ def removeNthFromEnd(head, n):
     #n nodes between first and second pointers
     for _ in range(n + 1):
         first = first.next
-    
     # Move both pointers until the first pointer reaches the end of the list
     # By this time, the second pointer will be just before the node to remove
     while first:
         first = first.next
         second = second.next
-    
     # Remove the nth node from the end by skipping it
     second.next = second.next.next
     # Return the head of the modified list
