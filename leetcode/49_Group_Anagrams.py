@@ -22,7 +22,7 @@ def groupAnagrams(strs):
     #return the grouped anagrams
     return list(anagram_groups.values())
     #time O(k log k) where k is the average length of each 
-    #the strings. Iterating over all n strings takes 
+    #the strings. Iterating over all n strings takes
     # O(n * k log k)
 
     #space O(n * k) for storing the dictionary and all
