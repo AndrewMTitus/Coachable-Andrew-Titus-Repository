@@ -11,7 +11,7 @@ def climbStairs(n):
     """
     if n <= 2:
         return n
-    
+        
     #base cases
     first, second = 1, 2
 
