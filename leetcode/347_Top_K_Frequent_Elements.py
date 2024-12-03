@@ -1,3 +1,6 @@
+from collections import Counter
+import heapq
+
 def topKFrequent(nums, k):
     """
     :type nums: List[int]
@@ -19,7 +22,6 @@ def topKFrequent(nums, k):
         heapq.heappush(heap, (freq, num))
         if len(heap) > k:
             heapq.heappop(heap)
-    
     #extract the elements from the heap
     return [num for freq,num in heap]
 
