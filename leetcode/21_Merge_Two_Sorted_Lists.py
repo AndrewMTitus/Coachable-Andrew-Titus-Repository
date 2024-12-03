@@ -1,7 +1,7 @@
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
-        self.next = next
+        self.next = next_node
 def mergeTwoLists(list1, list2):
     """
     :type list1: Optional[ListNode]
@@ -27,7 +27,6 @@ def mergeTwoLists(list1, list2):
             current.next = list2
             list2 = list2.next
         current = current.next
-        
     #if there are any remaining nodes attach them
     current.next = list1 if list1 else list2
     #return the next node of the dummy list, which is
