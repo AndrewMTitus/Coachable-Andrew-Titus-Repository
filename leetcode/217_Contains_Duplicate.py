@@ -18,5 +18,5 @@ def containsDuplicate(nums):
     #no duplicates found
     return False
 
-    #time O(n) n is the length of the array. 
+    #time O(n) n is the length of the array.
     #space O(n) in worst case where all elements are distinct
