@@ -16,10 +16,10 @@ def romanToInt(s):
         "M": 1000
     }
     total = 0
-    for i in range(len(s)):
-        if i == len(s) - 1 or roman[s[i]] >= roman[s[i + 1]]:
-            total += roman[s[i]]
+    for i, char in enumerate(s):
+        if i == len(s) - 1 or roman[char] >= roman[s[i + 1]]:
+            total += roman[char]
         else:
-            total -= roman[s[i]]
+            total -= roman[char]
     return total
     #time O(n) space O(1)
