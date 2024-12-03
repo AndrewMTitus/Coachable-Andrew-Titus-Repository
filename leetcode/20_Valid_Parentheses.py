@@ -28,5 +28,5 @@ def isValid(s):
     #time O(n) for the length of s, as we iterate through the
     #string exactly once.
 
-    #space O(n) for worst case if all characters are 
+    #space O(n) for worst case if all characters are
     #open brackets.
