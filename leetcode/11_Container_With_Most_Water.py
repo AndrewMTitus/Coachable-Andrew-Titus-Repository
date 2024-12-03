@@ -10,7 +10,7 @@ def maxArea(height):
     return the max area.
     """
     left, right = 0, len(height) - 1
-    max_area = 0    
+    max_area = 0
     while left < right:
         #Calculate the area
         current_area = min(height[left], height[right]) * (right - left)
