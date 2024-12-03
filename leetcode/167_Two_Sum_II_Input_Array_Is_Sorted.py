@@ -23,6 +23,6 @@ def twoSum(numbers, target):
             left += 1
         else: 
             right -= 1
-
+    return None
         #time O(n) each element is visited once.
         #space O(1) no additional space used16
