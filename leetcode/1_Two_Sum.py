@@ -28,9 +28,8 @@ def twoSum(nums, target):
         #check if the complement is already in the dictionary
         if complement in nums_to_index:
             return [nums_to_index[complement], i]
-        
         #store the current number with its index
         nums_to_index[num] = i
-        
+    return []
         #time O(n) for the length of nums
         #space O(n) to store at most each num,index in nums
