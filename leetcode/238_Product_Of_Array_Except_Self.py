@@ -31,14 +31,11 @@ def productExceptSelf(nums):
     for i in range(n):
         answer[i] = left
         left *= nums[i]
-        
     #calculate right product
     right = 1
     for i in range(n -1, -1, -1):
         answer[i] *= right
         right *= nums[i]
-        
     return answer
-
     #time O(n) two passes over the array
     #space O(1) the answer array is not considered extra space
