@@ -1,0 +1,17 @@
+def isSameTree(p, q):
+    """
+    :type p: Optional[TreeNode]
+    :type q: Optional[TreeNode]
+    :rtype: bool
+    base case - if both are null, then true
+    base case - if one empty, other not, then false
+    return true when p.val = q.val and p.left, q.left and
+    p.right, q.right
+    """
+    if not p and not q:
+        return True
+    if not p or not q:
+        return False
+    return (p.val == q.val) and self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
+    #time O(min(N,M))
+    #space O(min(Hp, Hq))
