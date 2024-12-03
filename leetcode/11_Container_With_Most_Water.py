@@ -2,9 +2,12 @@ def maxArea(height):
     """
     :type height: List[int]
     :rtype: int
-    We can use a two-pointer approach where we calculate 
-    the area between the two points and continue to move the shorter line inward. 
-    We update the maximum area as we go and then return the max area.
+    We can use a two-pointer approach where we 
+    calculate the area between the two points 
+    and continue to 
+    move the shorter line inward. 
+    We update the maximum area as we go and then 
+    return the max area.
     """
     left, right = 0, len(height) - 1
     max_area = 0    
