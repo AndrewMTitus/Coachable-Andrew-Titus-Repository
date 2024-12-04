@@ -41,7 +41,7 @@ def threeSum(nums):
             else:
                 right -= 1
     return result
-    #time O(n^2) sorting takes O(n log n), and the 
-    #two-pointer search for each element takes O(n), 
+    #time O(n^2) sorting takes O(n log n), and the
+    #two-pointer search for each element takes O(n),
     #resulting in O(n^2)
     #space O(1) no additional space used.
