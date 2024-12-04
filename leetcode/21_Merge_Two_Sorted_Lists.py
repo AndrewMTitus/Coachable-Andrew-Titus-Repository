@@ -1,5 +1,5 @@
 class ListNode:
-    def __init__(self, val=0, next=None):
+    def __init__(self, val=0, next_node=None):
         self.val = val
         self.next = next_node
 def mergeTwoLists(list1, list2):
