@@ -1,7 +1,7 @@
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
-        self.next = next
+        self.next = next_node
 def mergeTwoLists(list1, list2):
     """
     :type list1: Optional[ListNode]
@@ -20,7 +20,7 @@ def mergeTwoLists(list1, list2):
     while list1 and list2:
         #choose the smaller value node to add to the
         #merged list.
-        if list1.val <= list2.val:
+        if list1.val < list2.val:
             current.next = list1
             list1 = list1.next
         else:
