@@ -21,7 +21,7 @@ def twoSum(numbers, target):
             return [left + 1, right + 1]
         if current_sum < target:
             left += 1
-        else: 
+        else:
             right -= 1
     return None
         #time O(n) each element is visited once.
