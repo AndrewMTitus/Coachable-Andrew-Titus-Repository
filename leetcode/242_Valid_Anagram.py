@@ -10,5 +10,5 @@ def isAnagram(s, t):
     """
     return Counter(s) == Counter(t)
     #time O(n) for the length of the strings
-    #space O(k) for special characters if needed, practical 
+    #space O(k) for special characters if needed, practical
     #space is O(1)
