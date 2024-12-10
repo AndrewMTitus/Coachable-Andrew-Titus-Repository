@@ -1,4 +1,4 @@
-def dailyTemperatures(self, temperatures):
+def dailyTemperatures(temperatures):
     """
     :type temperatures: List[int]
     :rtype: List[int]
