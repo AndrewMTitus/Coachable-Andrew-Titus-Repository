@@ -1,5 +1,5 @@
 from collections import Counter
-def checkInclusion(self, s1, s2):
+def checkInclusion(s1, s2):
     """
     :type s1: str
     :type s2: str
@@ -17,7 +17,7 @@ def checkInclusion(self, s1, s2):
     #Slide the window across s2
     for i in range(len(s1), len(s2)):
         if s1_count == window_count:
-            return True 
+            return True
         #Update the window: remove the left character
         #and add the right character
         left_char = s2[i - len(s1)]
