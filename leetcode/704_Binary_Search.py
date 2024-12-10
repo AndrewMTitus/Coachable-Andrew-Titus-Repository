@@ -1,4 +1,4 @@
-def search(self, nums, target):
+def search(nums, target):
     """
     :type nums: List[int]
     :type target: int
