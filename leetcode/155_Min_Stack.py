@@ -29,9 +29,9 @@ def pop(self):
     """
     if self.stack:
         val = self.stack.pop()
-    #Synchronize the min stack
-    if val == self.min_stack[-1]:
-        self.min_stack.pop()
+        #Synchronize the min stack
+        if val == self.min_stack[-1]:
+            self.min_stack.pop()
 
 def top(self):
     """
