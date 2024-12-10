@@ -20,9 +20,9 @@ def maxSlidingWindow(nums, k):
     for i, num in enumerate(nums):
         #Remove indices that are out of window.
         if deq and deq[0] < i - k + 1:
-            deq.popleft()    
+            deq.popleft()
         #Remove smaller numbers in k range
-        while deq and nums[deq[-1]] < nums[i]:
+        while deq and nums[deq[-1]] < num:
             deq.pop()
         #Add the current element's index
         deq.append(i)
