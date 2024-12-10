@@ -11,7 +11,7 @@ and max_length stores the longest substring found
 window.
 6. return result
 """
-def lengthOfLongestSubstring(self, s):
+def lengthOfLongestSubstring(s):
     """
     :type s: str
     :rtype: int
@@ -20,11 +20,11 @@ def lengthOfLongestSubstring(self, s):
     left = 0
     max_length = 0
 
-    for right in range(len(s)):
-        while s[right] in char_set:
+    for right, char in enumerate(s):
+        while char in char_set:
             char_set.remove(s[left])
             left += 1
-        char_set.add(s[right])
+        char_set.add(char)
         max_length = max(max_length, right - left + 1)
     return max_length
 
