@@ -14,7 +14,7 @@ def characterReplacement(s, k):
         #Add the character at the right pointer to the frequency map
         freq[char] += 1
         #Update the max frequency of a single character in the window
-        max_freq = max(max_freq, freq[char]
+        max_freq = max(max_freq, freq[char])
 
         #Current window size
         window_size = right - left + 1
