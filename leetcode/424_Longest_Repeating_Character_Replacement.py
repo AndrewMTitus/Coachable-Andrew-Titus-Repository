@@ -1,5 +1,5 @@
 from collections import defaultdict
-def characterReplacement(self, s, k):
+def characterReplacement(s, k):
     """
     :type s: str
     :type k: int
@@ -10,11 +10,11 @@ def characterReplacement(self, s, k):
     freq = defaultdict(int)
     max_freq = 0
 
-    for right in range(len(s)):
+    for right, char in enumerate(s):
         #Add the character at the right pointer to the frequency map
-        freq[s[right]] += 1
+        freq[char] += 1
         #Update the max frequency of a single character in the window
-        max_freq = max(max_freq, freq[s[right]])
+        max_freq = max(max_freq, freq[char]
 
         #Current window size
         window_size = right - left + 1
