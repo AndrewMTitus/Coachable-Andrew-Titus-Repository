@@ -1,5 +1,5 @@
 from collections import deque
-def maxSlidingWindow(self, nums, k):
+def maxSlidingWindow(nums, k):
     """
     :type nums: List[int]
     :type k: int
@@ -12,15 +12,15 @@ def maxSlidingWindow(self, nums, k):
     3.Add each new element to the deque while maintaining the decreasing order.
     """
     if not nums or k == 0:
-        return [] 
+        return []
     #Initialize deque and result array
     deq = deque()
     result = []
 
-    for i in range(len(nums)):
+    for i, num in enumerate(nums):
         #Remove indices that are out of window.
         if deq and deq[0] < i - k + 1:
-            deq.popleft()     
+            deq.popleft()    
         #Remove smaller numbers in k range
         while deq and nums[deq[-1]] < nums[i]:
             deq.pop()
