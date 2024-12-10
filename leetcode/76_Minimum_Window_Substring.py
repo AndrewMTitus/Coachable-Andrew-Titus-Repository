@@ -1,5 +1,5 @@
 from collections import Counter, defaultdict
-def minWindow(self, s, t):
+def minWindow(s, t):
     """
     :type s: str
     :type t: str
